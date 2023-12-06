@@ -30,7 +30,7 @@ app.use(router)
 app.get('/', (req, res) => {
     // const myhtml = "<h1>Devloper Studio | Gap</h1>"
     // res.send(myhtml)
-    res.send("<h1>Hello | Studio</h1>")
+    res.send("<h1>Hello World | Studio</h1>")
 })
 
 app.listen(port, () => {
