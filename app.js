@@ -21,15 +21,14 @@ http.createServer(function (req, res) {
 */
 
 const express = require('express')
-const debug = require('debug')('app')
 const app = express()
 const port = 5000;
-const router = require('./routes/myRouter');
-app.use(router)
+const router = require('./routes/myRouter')
+const path = require('path')
 
+app.use(router)
+app.use(express.static(path.join(__dirname,'public')))
 app.get('/', (req, res) => {
-    // const myhtml = "<h1>Devloper Studio | Gap</h1>"
-    // res.send(myhtml)
     res.send("<h1>Hello World | Studio</h1>")
 })
 
