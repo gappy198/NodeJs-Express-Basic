@@ -1,0 +1,19 @@
+{
+    "products": [
+      {
+        "productTitle": "น้ำยา",
+        "productDescription": "สูตร 1",
+        "productPrice": 100
+      },
+      {
+        "productTitle": "น้ำยา",
+        "productDescription": "สูตร 2",
+        "productPrice": 199
+      },
+      {
+        "productTitle": "น้ำยา",
+        "productDescription": "สูตร 3",
+        "productPrice": 299
+      }
+    ]
+  }
