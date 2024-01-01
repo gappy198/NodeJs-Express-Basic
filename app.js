@@ -1,28 +1,12 @@
 const express = require('express')
 const app = express()
-const router = require('./routes/myRouter')
 const path = require('path')
-const products = require('./data/products.json')
-const productRouter = express.Router()
-app.use(router)
+const productsRouter = require('./src/route/productsRouter')
 
 app.set("views", './src/views');
 app.set("view engine", "ejs");
 
-productRouter.route("/").get((req, res) => {
-    res.render("products", {
-        products,
-    })
-})
-
-productRouter.route("/:id").get((req, res) => {
-    const id = req.params.id
-    res.render("product", {
-        product: products[id]
-    })
-})
-
-app.use("/products", productRouter)
+app.use("/products", productsRouter)
 
 app.get('/', (req, res) => {
     res.render('index', { username: 'GapDev', customers: ["Golf", "Gap", "Get"] })
