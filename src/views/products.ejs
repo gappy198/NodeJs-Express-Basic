@@ -137,6 +137,17 @@
     </header>
     <!-- ====== Header End ====== -->
 
+    <section id="features" class="ud-features">
+      <div class="container">
+        <h1>Hello world</h1>
+        <% products.map((products)=>{%>
+            <h4><%= products.productTitle %></h4>
+            <p><%= products.productDescription %></p>
+            <p>ราคา : <%= products.productPrice %> บาท</p>
+        <%})%>
+      </div>
+    </section>
+
     <!-- ====== Hero Start ====== -->
     <section class="ud-hero" id="home">
       <div class="container">
