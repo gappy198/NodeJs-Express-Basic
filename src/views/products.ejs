@@ -5,7 +5,9 @@
     <section id="features" class="ud-features">
       <h1>Hello world</h1>
       <% products.map((products)=>{%>
-      <a href="/products/<%= products.id %>"></a><h4><%= products.productTitle %></h4>
+      <h4>
+        <a href="/products/<%= products.id %>"><%= products.productTitle %></a>
+      </h4>
       <p><%= products.productDescription %></p>
       <p>ราคา : <%= products.productPrice %> บาท</p>
       <%})%>
