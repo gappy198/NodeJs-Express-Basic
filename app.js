@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const router = require('./routes/myRouter')
 const path = require('path')
+const products = require('./data/products.json')
 const productRouter = express.Router()
 
 app.use(router)
@@ -10,7 +11,9 @@ app.set("views", './src/views');
 app.set("view engine", "ejs");
 
 productRouter.route("/").get((req, res) => {
-    res.send("Hello World || Products")
+    res.render("products",
+        products,
+    )
 })
 
 productRouter.route("/1").get((req, res) => {
