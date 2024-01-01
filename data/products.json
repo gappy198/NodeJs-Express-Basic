@@ -1,19 +1,28 @@
 {
-    "products": [
-      {
-        "productTitle": "น้ำยา",
-        "productDescription": "สูตร 1",
-        "productPrice": 100
-      },
-      {
-        "productTitle": "น้ำยา",
-        "productDescription": "สูตร 2",
-        "productPrice": 199
-      },
-      {
-        "productTitle": "น้ำยา",
-        "productDescription": "สูตร 3",
-        "productPrice": 299
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": 0,
+      "productTitle": "น้ำยา",
+      "productDescription": "สูตร 1",
+      "productPrice": 100
+    },
+    {
+      "id": 1,
+      "productTitle": "น้ำยา",
+      "productDescription": "สูตร 2",
+      "productPrice": 199
+    },
+    {
+      "id": 2,
+      "productTitle": "น้ำยา",
+      "productDescription": "สูตร 3",
+      "productPrice": 299
+    },
+    {
+      "id": 3,
+      "productTitle": "น้ำยา",
+      "productDescription": "สูตร 4",
+      "productPrice": 799
+    }
+  ]
+}
