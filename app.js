@@ -2,11 +2,13 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const productsRouter = require('./src/route/productsRouter')
+const route = require('./src/route/myRoute')
+app.use(route)
 
 app.set("views", './src/views');
 app.set("view engine", "ejs");
 
-app.use("/products", productsRouter)
+app.use('/products', productsRouter)
 
 app.get('/', (req, res) => {
     res.render('index', { username: 'GapDev', customers: ["Golf", "Gap", "Get"] })
